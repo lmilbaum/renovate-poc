@@ -1,0 +1,5 @@
+{
+  "platform": "github",
+  "repositories": ["lmilbaum/renovate-poc"],
+  "extends": ["config:recommended"]
+}
