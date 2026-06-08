@@ -3,6 +3,8 @@
   "repositories": ["lmilbaum/renovate-poc"],
   "extends": ["config:recommended"],
   "helm-values": {
-    "fileMatch": ["values.yaml"]
+    "managerFilePatterns": [
+      "/values.yaml/"
+    ]
   }
 }
