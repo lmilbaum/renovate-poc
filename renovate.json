@@ -1,10 +1,13 @@
 {
-  "platform": "github",
-  "repositories": ["lmilbaum/renovate-poc"],
-  "extends": ["config:recommended"],
   "helm-values": {
     "managerFilePatterns": [
       "/values.yaml/"
     ]
-  }
+  },
+  "packageRules": [
+    {
+      "matchDatasources": ["docker"],
+      "versioning": "loose"
+    }
+  ]
 }
