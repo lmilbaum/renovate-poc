@@ -8,7 +8,7 @@
       "matchStrings": [
         "nginx:\\s*\\n\\s*chart_version:\\s*(?<currentValue>[^\\s]+)"
       ],
-      "depNameTemplate": "nginx",
+      "depNameTemplate": "nginx-ingress",
       "datasourceTemplate": "helm",
       "registryUrlTemplate": "https://helm.nginx.com/stable"
     }
