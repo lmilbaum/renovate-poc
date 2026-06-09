@@ -8,9 +8,9 @@
       "matchStrings": [
         "nginx:\\s*\\n\\s*chart_version:\\s*(?<currentValue>[^\\s]+)"
       ],
-      "depNameTemplate": "nginx-ingress",
+      "depNameTemplate": "traefik",
       "datasourceTemplate": "helm",
-      "registryUrlTemplate": "https://helm.nginx.com/stable"
+      "registryUrlTemplate": "https://helm.traefik.io/traefik"
     }
   ]
 }

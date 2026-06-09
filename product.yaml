@@ -24,6 +24,6 @@ spec:
       name: rke2
       version: v1.28.5+rke2r1
 
-  nginx-ingress:
-    chart_version: 2.6.0
+  traefik:
+    chart_version: v40.2.0
 
