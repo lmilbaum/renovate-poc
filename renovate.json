@@ -9,9 +9,8 @@
       "matchStrings": [
         "nginx:\\s*\\n\\s*chart_version:\\s*(?<currentValue>[^\\s]+)"
       ],
-      "depNameTemplate": "bitnamicharts/nginx",
-      "datasourceTemplate": "helm",
-      "registryUrlTemplate": "registry-1.docker.io"
+      "depNameTemplate": "oci://registry-1.docker.io/bitnamicharts/nginx",
+      "datasourceTemplate": "helm"
     }
   ]
 }
