@@ -25,5 +25,5 @@ spec:
       version: v1.28.5+rke2r1
 
   traefik:
-    chart_version: v40.2.0
+    chart_version: 40.3.0
 
