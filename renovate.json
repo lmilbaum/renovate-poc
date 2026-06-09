@@ -10,6 +10,17 @@
       ],
       "depNameTemplate": "traefik",
       "datasourceTemplate": "helm"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^.*\\.ya?ml$/"
+      ],
+      "matchStrings": [
+        "distribution:\\s*[\\s\\S]*?name:\\s*rke2[\\s\\S]*?version:\\s*(?<currentValue>[^\\s]+)"
+      ],
+      "depNameTemplate": "rancher/rke2",
+      "datasourceTemplate": "github-releases"
     }
   ],
   "packageRules": [
