@@ -10,8 +10,7 @@
       ],
       "depNameTemplate": "traefik",
       "datasourceTemplate": "helm",
-      "registryUrlTemplate": "https://helm.traefik.io/traefik"
+      "registryUrls": ["https://helm.traefik.io/traefik"]
     }
   ]
 }
-
