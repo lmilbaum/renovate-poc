@@ -1,0 +1,29 @@
+apiVersion: platform/v1
+kind: Product
+
+metadata:
+  name: platform
+  version: 0.1.0
+
+spec:
+  cluster:
+    name: prod
+
+    control_plane:
+      nodes:
+        - cp-01.internal
+        - cp-02.internal
+        - cp-03.internal
+
+    workers:
+      nodes:
+        - worker-01.internal
+        - worker-02.internal
+
+    distribution:
+      name: rke2
+      version: v1.28.5+rke2r1
+
+  nginx:
+    chart_version: 22.1.1
+

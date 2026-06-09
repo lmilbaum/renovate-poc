@@ -1,13 +1,15 @@
+
 {
-  "helm-values": {
-    "managerFilePatterns": [
-      "/values.yaml/"
-    ]
-  },
-  "packageRules": [
+  "customManagers": [
     {
-      "matchDatasources": ["docker"],
-      "versioning": "loose"
+      "customType": "regex",
+      "fileMatch": ["^.*\\.ya?ml$"],
+      "matchStrings": [
+        "nginx:\\s*\\n\\s*chart_version:\\s*(?<currentValue>[^\\s]+)"
+      ],
+      "depNameTemplate": "bitnami/nginx",
+      "datasourceTemplate": "helm",
+      "registryUrlTemplate": "https://charts.bitnami.com/bitnami"
     }
   ]
 }
