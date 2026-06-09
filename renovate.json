@@ -15,7 +15,7 @@
   "packageRules": [
     {
       "matchDatasources": ["helm"],
-      "registryUrls": ["https://helm.traefik.io"]
+      "registryUrls": ["https://traefik.github.io/charts"]
     }
   ]
 }
