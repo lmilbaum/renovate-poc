@@ -3,7 +3,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^.*\\.ya?ml$"],
+      "managerFilePatterns": [
+        "/^.*\\.ya?ml$/"
+      ],
       "matchStrings": [
         "nginx:\\s*\\n\\s*chart_version:\\s*(?<currentValue>[^\\s]+)"
       ],
