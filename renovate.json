@@ -6,7 +6,7 @@
         "/^.*\\.ya?ml$/"
       ],
       "matchStrings": [
-        "nginx:\\s*\\n\\s*chart_version:\\s*(?<currentValue>[^\\s]+)"
+        "traefik:\\s*[\\s\\S]*?chart_version:\\s*(?<currentValue>[^\\s]+)"
       ],
       "depNameTemplate": "traefik",
       "datasourceTemplate": "helm"
